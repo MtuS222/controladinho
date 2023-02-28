@@ -34,7 +34,7 @@ class LoginPage extends StatelessWidget {
                       color: const Color(0xff030475),
                     ),
                   ),
-                  child: LoginMenu(),
+                  child: const LoginMenu(),
                 ),
               ),
             ),

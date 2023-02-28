@@ -39,10 +39,10 @@ class _LoginMenuState extends State<LoginMenu> {
             obscureText: true,
             hintText: 'Senha',
             controller: senha,
-            validator: (value) => 'tome',
+            validator: (value) =>'' ,
           ),
           const SizedBox(height: 80),
-          Row(
+          Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(
@@ -50,16 +50,19 @@ class _LoginMenuState extends State<LoginMenu> {
                     if (usuario.text == 'admin' && senha.text == 'admin') {
                       Navigator.pushNamed(context, '/home');
                     }
-                    print('EROU');
                   },
-                  child: const Text('Entrar')),
-              const SizedBox(width: 20),
+                  child: const Text(
+                    'Entrar',
+                    style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () =>
                     Navigator.pushReplacementNamed(context, '/sing-in'),
                 child: const Text(
                   'Cadastrar',
-                  style: TextStyle(fontSize: 15),
+                  style: TextStyle(fontSize: 20),
                 ),
               ),
             ],

@@ -16,7 +16,7 @@ class MeuApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
               // padding: const EdgeInsets.all(20),
-              fixedSize: const Size(110, 30),
+              fixedSize: const Size(200, 50),
               backgroundColor: const Color(0xff030475),
               foregroundColor: Colors.white),
         ),
