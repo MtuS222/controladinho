@@ -25,25 +25,21 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final altura = MediaQuery.of(context).size.height;
-    final largura =MediaQuery.of(context).size.width;    
+    final largura = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Row(
         children: [
-         
-           Container(
+          Container(
             height: altura,
             width: largura,
-              color: const Color(0xff020475),
-              child: Image.network(
-                'https://cdn-icons-png.flaticon.com/128/9789/9789398.png',
-                height: 200,
-                width: 200,
-              ),
+            color: const Color(0xff030475),
+            child: Image.network(
+              'https://cdn-icons-png.flaticon.com/128/9789/9789398.png',
+              height: 200,
+              width: 200,
             ),
-          
-        
-           Container(color: Colors.white),
-        
+          ),
+          Container(color: Colors.white),
         ],
       ),
     );
