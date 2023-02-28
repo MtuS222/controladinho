@@ -15,7 +15,7 @@ class SingInPage extends StatelessWidget {
               const Text('Cadastre-se'),
               const SizedBox(height: 30),
               ElevatedButton(
-                  onPressed: () => Navigator.pop(context),
+                  onPressed: () => Navigator.pushReplacementNamed(context, '/'),
                   child: const Text('Voltar')),
             ],
           ),

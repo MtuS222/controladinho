@@ -55,7 +55,8 @@ class _LoginMenuState extends State<LoginMenu> {
                   child: const Text('Entrar')),
               const SizedBox(width: 20),
               ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, '/sing-in'),
+                onPressed: () =>
+                    Navigator.pushReplacementNamed(context, '/sing-in'),
                 child: const Text(
                   'Cadastrar',
                   style: TextStyle(fontSize: 15),
